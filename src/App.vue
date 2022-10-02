@@ -10,3 +10,9 @@ components: {
     <TheMonsterGameVue> </TheMonsterGameVue>
   </section>
 </template>
+
+<style>
+* {
+  background-color: #eee;
+}
+</style>
