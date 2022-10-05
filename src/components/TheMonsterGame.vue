@@ -1,7 +1,7 @@
 <template>
-  <a class="font-bold text-center" href="/"
-    ><h1 class="heading">Monster Game</h1></a
-  >
+  <header id="heading">
+    <a class="font-bold text-center" href="/"> <h2>Monster Game</h2> </a>
+  </header>
 
   <div id="bar">
     <div id="game-grid">
@@ -33,9 +33,11 @@
   <section v-if="winner">
     <div class="text-center">
       <h2 class="winner">Game Over</h2>
-      <p class="font-bold winner" v-if="winner === 'player'">You win!</p>
+      <p class="font-bold winner" v-if="winner === 'player'">
+        You won, monster lost!
+      </p>
       <p class="font-bold winner" v-else-if="winner === 'monster'">
-        Monster Wins
+        Monster Won, You lost!
       </p>
       <p class="font-bold winner" v-else>draw</p>
       <the-button-vue class="move-control winner" @click="resetGame"
@@ -44,6 +46,7 @@
       <the-digital-clock-vue class="clock"></the-digital-clock-vue>
     </div>
   </section>
+
   <!-- start of button to control the game  -->
   <div v-else id="game-pad">
     <section id="container">
@@ -222,10 +225,18 @@ watch(monsterHealth, function () {
   justify-items: center;
   font-weight: none;
 }
-.heading {
+a {
+  text-align: center;
+}
+#heading {
+  /* margin-left: 40%; */
+  /* margin-right: auto; */
   padding: 0.5rem;
   font-size: 220%;
   font-family: 'Press Start 2P', cursive;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* justify-items: center; */
 }
 h2.h2 {
   color: #000;
