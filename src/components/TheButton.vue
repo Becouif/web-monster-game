@@ -7,4 +7,11 @@
   </button>
 </template>
 
-<style scoped></style>
+<style scoped>
+#btn {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+</style>
