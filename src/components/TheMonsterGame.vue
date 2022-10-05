@@ -279,13 +279,15 @@ h2.h2 {
   font-family: 'Press Start 2P', cursive;
 }
 #log {
+  margin-top: 1.5rem;
+  text-align: center;
   font-family: 'Press Start 2P', cursive;
   font-size: 0.5rem;
   /* display: block; */
   justify-items: center;
   /* justify-content: center; */
   justify-self: center;
-  margin-left: 50%;
+  /* margin-left: 50%; */
 }
 #log ul {
   list-style: none;
