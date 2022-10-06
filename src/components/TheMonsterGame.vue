@@ -23,7 +23,7 @@
         <h2 class="h2 font-bold">Monster's Health</h2>
         <div class="healthbar shadow-2xl">
           <svg class="healthbar-value shadow-2xl" :style="monsterBarStyles">
-            {{ monsterHealth.valueOf }}
+            {{ monsterHealth.value }}
           </svg>
         </div>
       </section>
